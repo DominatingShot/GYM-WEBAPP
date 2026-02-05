@@ -79,15 +79,3 @@ src/
    ```bash
    npm run build
    ```
-
----
-
-## 💡 Potential Interview Questions
-**Q: Why use absolute positioning for the background icons?**
-*A: To ensure they remain part of the visual background layer without affecting the document flow of the main content. We use `pointer-events-none` so they don't interfere with user interactions.*
-
-**Q: How did you handle the project detail view?**
-*A: I implemented a modal system using a `selectedProject` state. When a card is clicked, it populates this state. Framer Motion's `AnimatePresence` is used to smoothly mount/unmount the modal from the DOM with a backdrop-blur effect.*
-
-**Q: Why Neo-Brutalism?**
-*A: It stands out. In a sea of "clean and soft" portfolios, Brutalism projects confidence, technical directness, and a modern edge that aligns with my background in data engineering where structure and clarity are paramount.*
