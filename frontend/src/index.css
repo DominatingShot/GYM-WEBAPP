@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@theme {
+    --font-sans: 'Inter', sans-serif;
+
+    --color-primary: #3B82F6;
+    /* Vibrant blue accent */
+    --color-background: #F2F2F2;
+    /* Light gray background */
+    --color-dark: #1A1A1A;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-dark);
+    font-family: var(--font-sans);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+}
